@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var fruits=["Apple","Banana","Mango","Orange"];
+
+		function load(){
+			var x=fruits.toString();
+			document.getElementById("These").innerHTML=x;
+		}
+
+
+		function Add(){
+			var favourite=prompt("What's your favourte food?");
+			fruits.push(favourite);
+			var y=fruits.toString();
+			document.getElementById("These").innerHTML=y;
+		}
+	</script>
+</head>
+<body onload="load()">
+<h1>Your Favourite Fruits</h1>
+<br>
+<p id="These"></p>
+<button onclick="Add()">Add more favourites</button>
+
+</body>
+</html>
